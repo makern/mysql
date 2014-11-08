@@ -50,7 +50,7 @@ cmd = assign_root_password_cmd
 execute 'assign-root-password' do
   command cmd
   action :run
-  only_if "/usr/bin/mysql -u root -e 'show databases;'"
+  only_if "/usr/bin/mysql -u root -e 'show databases;' --password=''"
 end
 
 template '/etc/mysql_grants.sql' do
