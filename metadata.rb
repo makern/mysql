@@ -25,7 +25,7 @@ supports 'suse'
 supports 'windows'
 
 depends 'openssl',         '~> 1.1'
-depends 'build-essential'
+depends 'build-essential', '>= 2.0.0'
 
 # wat
 depends 'homebrew'
